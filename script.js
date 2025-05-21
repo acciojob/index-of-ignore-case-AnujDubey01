@@ -1,14 +1,15 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+  // Convert both strings to lowercase for case-insensitive comparison
+  const str1 = s1.toLowerCase();
+  const str2 = s2.toLowerCase();
 
-	  // Convert both strings to lowercase for case-insensitive comparison
   if (str1.includes(str2))
     return str1.indexOf(str2);
   else
     return -1;
 }
 
-// // Please do not change the code below
+// Do not change below
 const s1 = prompt("Enter s1:");
 const s2 = prompt("Enter s2:");
 alert(indexOfIgnoreCase(s1, s2));
